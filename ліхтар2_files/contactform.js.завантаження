@@ -1,0 +1,13 @@
+jQuery(document).ready(function($) {
+
+$(".ajax-contact-form").submit(function() {
+
+		
+				result = '<p>Ваш відгуд успішно відправлено на модерацію!<br> Дякуємо!</p>';
+				$(".fields").hide();
+			
+			$('.note').html(result).css('display', 'block');
+
+	return false;
+	});
+});
